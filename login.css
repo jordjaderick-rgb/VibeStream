@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+body.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(rgba(0,255,128,0.25), rgba(0,255,128,0.25)), 
+    url('musicbg.jpg') center/cover no-repeat;
+  background-blend-mode: overlay;
+}
+
+
+.login-card {
+  background: rgba(0,0,0,0.7); 
+  border: 2px solid #00ff88;   
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,255,128,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0,255,128,0.7);
+}
+
+
+.login-card h2 {
+  color: #00ff88;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #00ff88;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #00e673;
+  box-shadow: 0 0 15px #00ff88;
+  transform: scale(1.03);
+}
+
+
+.login-card .back a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00ff88;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-card .back a:hover {
+  text-decoration: underline;
+}

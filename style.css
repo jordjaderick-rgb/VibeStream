@@ -1,0 +1,179 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url("musicbg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #00ff88;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00ff88;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+.vip {
+    background: #00ff88;
+    color: black;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.login-mini input {
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.login-mini button {
+    background: #00ff88;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    opacity: 0.85;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.banner-buttons button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #00ff88;
+    color: black;
+    font-weight: 600;
+}
+
+.primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+}
+
+.secondary:hover {
+    background: #00ff88;
+    color: black;
+}
+
+
+.music-section {
+    padding: 80px 20px;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.music-section h2 {
+    color: #00ff88;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.music-card {
+    background: rgba(0, 255, 128, 0.05);
+    border: 1px solid #00ff88;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.music-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.music-card p {
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ff88;
+}
